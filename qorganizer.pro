@@ -8,16 +8,9 @@ DEPENDPATH += . \
 INCLUDEPATH += .
 
 # Input
-HEADERS += qorganizer.h \
-    settings.h \
-    delegates.h \
-    qcalendar.h
-SOURCES += main.cpp \
-    qorganizer.cpp \
-    settings.cpp \
-    delegates.cpp \
-    qcalendar.cpp
-RESOURCES += application.qrc
+HEADERS += src/*.h
+SOURCES += src/*.cpp
+RESOURCES += qorganizer.qrc
 QT += network \
     sql
 TRANSLATIONS += lang/Hungarian.ts \
