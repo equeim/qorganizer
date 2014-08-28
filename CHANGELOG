@@ -1,4 +1,16 @@
+3.1.6:
+ -Small code and .pro file refactoring. Compile translations at build time.
+ -Added .desktop file
 
+v3.1 Update 5:
+-Fixed critical compatibility issue with Qt 4.6
+-Fixed compile error under Qt 4.6
+
+v3.1 Update 4:
+ -Added Polish translation thanks to Dariusz Gadomski
+ -Fixed a bug that caused memory problems and crashes on 64 bit systems
+ -Removed compiler warning messages
+ -Binaries recompiled with Qt 4.4
 
 v3.1 Update 3:
  -Added German and French translation thanks to Jens Körner (German) and Naji Mammeri (French).
