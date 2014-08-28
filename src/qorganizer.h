@@ -505,7 +505,9 @@ public:
       void searchNext();
       //Saving column widths
       void saveColumnWidths();
+      void saveRowHeights();
       void setColumnWidths();
+      void setRowHeights();
       void saveCalendarColumnWidths();
       void setCalendarColumnWidths();
       //Odd or even in timetable

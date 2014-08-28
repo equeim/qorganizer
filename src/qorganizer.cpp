@@ -56,6 +56,7 @@ qOrganizer::qOrganizer()
       createToolBars();
       createStatusBar();     
       setColumnWidths();
+      setRowHeights();
 }
 
 void qOrganizer::getWDirPath()
@@ -2234,6 +2235,7 @@ void qOrganizer::updateAbsenceNr()
 void qOrganizer::closeEvent(QCloseEvent *e)
 {
  saveColumnWidths();
+ saveRowHeights();
  if((C_AUTOSAVE_TOGGLE)&&(!downloadingFromFTP)) saveAll();
  writeSettings();
  
@@ -2300,6 +2302,7 @@ void qOrganizer::toggleVisibility()
 	{
 		hide(); 
                 saveColumnWidths();
+                saveRowHeights();
                 if(!downloadingFromFTP)
                 {
                  cout << "Not Downloading so it's ok to load and save\n"; 
@@ -2333,6 +2336,7 @@ void qOrganizer::hideEvent(QHideEvent * event)
     setCalendarColumnWidths();
    } 
     saveColumnWidths();
+    saveRowHeights();
   }
 }
 
@@ -3310,6 +3314,7 @@ void qOrganizer::exitApp()
  }
  writeSettings();
  saveColumnWidths();
+ saveRowHeights();
  if(db.open()) db.close();
  qApp->quit();
 }
@@ -4234,7 +4239,7 @@ void qOrganizer::searchNext()
  oldSearchString=searchedString;
 }
 
-//-------------------------------------------REMEMBER COLUMN WIDTHS------------------------------------------------------------
+//-------------------------------------------REMEMBER COLUMN WIDTHS AND ROW HEIGHTS------------------------------------------------------------
 
 void qOrganizer::saveColumnWidths()
 {
@@ -4242,24 +4247,38 @@ void qOrganizer::saveColumnWidths()
  //QSettings settings("qOrganizer", "qOrganizer");
  //Schedule table
  for(int i=0;i<tableWid->columnCount();i++)
-  settings -> setValue("schedule"+QString::number(i),tableWid->columnWidth(i));
+  settings -> setValue("schedule_c"+QString::number(i),tableWid->columnWidth(i));
  
  //To-Do List
  for(int i=0;i<list->columnCount();i++)
-  settings -> setValue("todo"+QString::number(i),list->columnWidth(i));
+  settings -> setValue("todo_c"+QString::number(i),list->columnWidth(i));
  
  //TimeTable
  for(int i=0;i<table->columnCount();i++)
-  settings -> setValue("timetable"+QString::number(i),table->columnWidth(i));
+  settings -> setValue("timetable_c"+QString::number(i),table->columnWidth(i));
  
  //Mark table
  for(int i=0;i<markTable->columnCount();i++)
-  settings -> setValue("marktable"+QString::number(i),markTable->columnWidth(i));
+  settings -> setValue("marktable_c"+QString::number(i),markTable->columnWidth(i));
  
  //Absence table
  for(int i=0;i<absenceTable->columnCount();i++)
-  settings -> setValue("absencetable"+QString::number(i),absenceTable->columnWidth(i));
+  settings -> setValue("absencetable_c"+QString::number(i),absenceTable->columnWidth(i));
  
+}
+
+void qOrganizer::saveRowHeights()
+{
+ cout << "Saving column widths\n";
+ //QSettings settings("qOrganizer", "qOrganizer");
+
+ //TimeTable
+ for(int i=0;i<table->rowCount();i++)
+  settings -> setValue("timetable_r"+QString::number(i),table->rowHeight(i));
+
+ //Mark table
+ for(int i=0;i<markTable->rowCount();i++)
+  settings -> setValue("marktable_r"+QString::number(i),markTable->rowHeight(i));
 }
 
 void qOrganizer::setColumnWidths()
@@ -4268,28 +4287,43 @@ void qOrganizer::setColumnWidths()
  //QSettings settings("qOrganizer", "qOrganizer");
  //Schedule table
  for(int i=0;i<tableWid->columnCount();i++)
-  if(settings -> value("schedule"+QString::number(i)).toInt()!=0)
-   tableWid->setColumnWidth(i,settings -> value("schedule"+QString::number(i)).toInt());
+  if(settings -> value("schedule_c"+QString::number(i)).toInt()!=0)
+   tableWid->setColumnWidth(i,settings -> value("schedule_c"+QString::number(i)).toInt());
  
  //To-Do List
  for(int i=0;i<list->columnCount();i++)
-  if(settings -> value("todo"+QString::number(i)).toInt()!=0)
-   list->setColumnWidth(i,settings -> value("todo"+QString::number(i)).toInt());
+  if(settings -> value("todo_c"+QString::number(i)).toInt()!=0)
+   list->setColumnWidth(i,settings -> value("todo_c"+QString::number(i)).toInt());
  
  //TimeTable
  for(int i=0;i<table->columnCount();i++)
-  if(settings -> value("timetable"+QString::number(i)).toInt()!=0)
-   table->setColumnWidth(i,settings -> value("timetable"+QString::number(i)).toInt());
+  if(settings -> value("timetable_c"+QString::number(i)).toInt()!=0)
+   table->setColumnWidth(i,settings -> value("timetable_c"+QString::number(i)).toInt());
  
  //Mark table
  for(int i=0;i<markTable->columnCount();i++)
-  if(settings -> value("marktable"+QString::number(i)).toInt()!=0)
-   markTable->setColumnWidth(i,settings -> value("marktable"+QString::number(i)).toInt());
+  if(settings -> value("marktable_c"+QString::number(i)).toInt()!=0)
+   markTable->setColumnWidth(i,settings -> value("marktable_c"+QString::number(i)).toInt());
  
  //Absence table
  for(int i=0;i<absenceTable->columnCount();i++)
-  if(settings -> value("absencetable"+QString::number(i)).toInt()!=0)
-   absenceTable->setColumnWidth(i,settings -> value("absencetable"+QString::number(i)).toInt());
+  if(settings -> value("absencetable_c"+QString::number(i)).toInt()!=0)
+   absenceTable->setColumnWidth(i,settings -> value("absencetable_c"+QString::number(i)).toInt());
+}
+
+void qOrganizer::setRowHeights()
+{
+ cout << "Setting column widths\n";
+ //QSettings settings("qOrganizer", "qOrganizer");
+ //TimeTable
+ for(int i=0;i<table->rowCount();i++)
+  if(settings -> value("timetable_r"+QString::number(i)).toInt()!=0)
+   table->setRowHeight(i,settings -> value("timetable_r"+QString::number(i)).toInt());
+
+ //Mark table
+ for(int i=0;i<markTable->rowCount();i++)
+  if(settings -> value("marktable_r"+QString::number(i)).toInt()!=0)
+   markTable->setRowHeight(i,settings -> value("marktable_r"+QString::number(i)).toInt());
 }
 
 void qOrganizer::saveCalendarColumnWidths()
