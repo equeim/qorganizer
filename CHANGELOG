@@ -1,3 +1,7 @@
+3.2.0:
+ -Set system language automatically if it isn't set in settings
+ -Save row heights
+
 3.1.6:
  -Small code and .pro file refactoring. Compile translations at build time.
  -Added .desktop file
