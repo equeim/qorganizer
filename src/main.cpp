@@ -58,7 +58,9 @@ int main(int argc, char *argv[])
       QTranslator *translator = new QTranslator;
       app.installTranslator(translator);  
       readSettings(); //Read the language
-      translator->load(C_LANGUAGE,":/lang"); //set it
+      std::cout << C_LANGUAGE.toStdString() << "\n";
+      if (C_LANGUAGE == NULL) translator->load(QLocale::languageToString(QLocale::system().language()),":/lang");
+      else translator->load(C_LANGUAGE,":/lang"); //set it
       QSplashScreen *splash = new QSplashScreen;
       splash -> setPixmap(QPixmap(":/images/splash.png"));
       splash -> show();
