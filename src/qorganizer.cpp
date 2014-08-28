@@ -47,7 +47,7 @@ qOrganizer::qOrganizer()
       settings=0;
       getWDirPath();
       readSettings();
-      setWindowIcon(QIcon(":/images/icon.png"));
+      setWindowIcon(QIcon(":/images/qorganizer.png"));
       readConfigFile();
       connectToDB();
       addItems();

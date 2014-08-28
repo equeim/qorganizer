@@ -1,4 +1,6 @@
-<!DOCTYPE TS><TS>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="pt">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -163,7 +165,7 @@
     </message>
     <message>
         <source>Storing</source>
-        <translation type="unfinished">Dados</translation>
+        <translation>Dados</translation>
     </message>
     <message>
         <source>Select Directory</source>
@@ -171,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Configurações</translation>
+        <translation>&amp;Configurações</translation>
     </message>
 </context>
 <context>

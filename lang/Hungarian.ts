@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="hu">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Beállitások</translation>
+        <translation>&amp;Beállitások</translation>
     </message>
 </context>
 <context>
@@ -187,7 +188,7 @@
 
 &lt;br&gt;This application aims to bring simplicity in your life by &lt;br&gt; organizing your data in an intuitive way so you can always&lt;br&gt; find what you need and never forget something important.&lt;br&gt;This application focuses on students, providing &lt;br&gt;the features they consider usefull. &lt;br&gt;
 </source>
-        <translation type="unfinished">&lt;br&gt;Ez a szoftver a, Szabad Szoftver Alapitvány által kiadott, &lt;br&gt; GPL 2 licensz alatt van engedélyezve.&lt;br&gt;
+        <translation>&lt;br&gt;Ez a szoftver a, Szabad Szoftver Alapitvány által kiadott, &lt;br&gt; GPL 2 licensz alatt van engedélyezve.&lt;br&gt;
  &lt;br&gt;A program célja az egyszerüség, intuitiv felületével rendezi a fontos&lt;br&gt;
  információkat igy biztositva hogy nem feledkezünk meg róluk,&lt;br&gt; bárhol lennénk. 
 &lt;br&gt;Különös hangsúlyt fektet a diákok igényeire.&lt;br&gt;&lt;br&gt;</translation>

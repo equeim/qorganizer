@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="ru">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Настройки</translation>
+        <translation>&amp;Настройки</translation>
     </message>
 </context>
 <context>

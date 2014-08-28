@@ -12,7 +12,6 @@ SOURCES += src/main.cpp \
     src/qcalendar.cpp \
     src/qorganizer.cpp \
     src/settings.cpp
-RESOURCES += qorganizer.qrc
 
 TRANSLATIONS += lang/Hungarian.ts \
     lang/Romanian.ts \
@@ -31,27 +30,17 @@ TRANSLATIONS += lang/Hungarian.ts \
 QMAKE_EXTRA_COMPILERS += lrelease
 lrelease.input         = TRANSLATIONS
 lrelease.output        = ${QMAKE_FILE_BASE}.qm
-lrelease.commands      = $$[QT_INSTALL_BINS]/lrelease ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+lrelease.commands      = $$[QT_INSTALL_BINS]/lrelease ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_PATH}/${QMAKE_FILE_BASE}.qm
 lrelease.CONFIG += no_link
 PRE_TARGETDEPS += compiler_lrelease_make_all
 
-translations.path = /usr/share/qorganizer/lang
-translations.files = Hungarian.qm \
-    Romanian.qm \
-    Portuguese.qm \
-    Slovenian.qm \
-    Russian.qm \
-    Spanish.qm \
-    Albanian.qm \
-    Macedonian.qm \
-    Estonian.qm \
-    Dutch.qm \
-    German.qm \
-    French.qm \
-    Polish.qm
+RESOURCES += qorganizer.qrc
 
 icon.path = /usr/share/pixmaps
-icon.files = images/icon.png
+icon.files = images/qorganizer.png
+
+desktop.path = /usr/share/applications
+desktop.files = qorganizer.desktop
 
 target.path = /usr/bin
-INSTALLS += target icon translations
+INSTALLS += target icon desktop

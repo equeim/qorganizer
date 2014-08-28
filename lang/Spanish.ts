@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="es">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Configuraciones</translation>
+        <translation>&amp;Configuraciones</translation>
     </message>
 </context>
 <context>
@@ -703,7 +704,7 @@ Ejemplo: 3 equivale a 3:00 o a 03:00</translation>
     </message>
     <message>
         <source>Important notes, journal for </source>
-        <translation type="unfinished">Notas importantes, diária para </translation>
+        <translation>Notas importantes, diária para </translation>
     </message>
     <message>
         <source>Search:</source>

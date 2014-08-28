@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="et_EE">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Sätted</translation>
+        <translation>&amp;Sätted</translation>
     </message>
 </context>
 <context>
@@ -663,7 +664,7 @@ Kasutage järgmiseid formaate aega määramiseks:
     </message>
     <message>
         <source></source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ctrl+Y</source>
@@ -715,11 +716,11 @@ Kasutage järgmiseid formaate aega määramiseks:
     </message>
     <message>
         <source>Schedule for </source>
-        <translation type="unfinished">Ajakava </translation>
+        <translation>Ajakava </translation>
     </message>
     <message>
         <source>Important notes, journal for </source>
-        <translation type="unfinished">Tähtsad märjed, päevik </translation>
+        <translation>Tähtsad märjed, päevik </translation>
     </message>
     <message>
         <source>Search:</source>

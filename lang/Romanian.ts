@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="ro">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Setări</translation>
+        <translation>&amp;Setări</translation>
     </message>
 </context>
 <context>
@@ -538,7 +539,7 @@ Acest program pune accent pe nevoile eleviilor şi studenţiilor, punând la dis
     </message>
     <message>
         <source>Delete subject</source>
-        <translation type="unfinished">Ştergere subiect</translation>
+        <translation>Ştergere subiect</translation>
     </message>
     <message>
         <source>Delete mark column</source>

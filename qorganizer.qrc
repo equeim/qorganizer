@@ -3,7 +3,7 @@
         <file>images/settings.png</file>
         <file>images/save.png</file>
         <file>images/splash.png</file>
-        <file>images/icon.png</file>
+        <file>images/qorganizer.png</file>
         <file>images/logo.png</file>
         <file>images/booklet.png</file>
         <file>images/timetable.png</file>
@@ -17,5 +17,18 @@
         <file>images/clear.png</file>
         <file>images/databasesqlite.png</file>
         <file>images/databasemysql.png</file>
+        <file>lang/Albanian.qm</file>
+        <file>lang/Dutch.qm</file>
+        <file>lang/Estonian.qm</file>
+        <file>lang/French.qm</file>
+        <file>lang/German.qm</file>
+        <file>lang/Hungarian.qm</file>
+        <file>lang/Macedonian.qm</file>
+        <file>lang/Polish.qm</file>
+        <file>lang/Portuguese.qm</file>
+        <file>lang/Romanian.qm</file>
+        <file>lang/Russian.qm</file>
+        <file>lang/Slovenian.qm</file>
+        <file>lang/Spanish.qm</file>
     </qresource>
 </RCC>

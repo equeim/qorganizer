@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="sl">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Nastavitve</translation>
+        <translation>&amp;Nastavitve</translation>
     </message>
 </context>
 <context>
@@ -723,11 +724,11 @@ Primer: 3 je enako kot 3:00 ali 03:00</translation>
     </message>
     <message>
         <source>Schedule for </source>
-        <translation type="unfinished">Seznam za </translation>
+        <translation>Seznam za </translation>
     </message>
     <message>
         <source>Important notes, journal for </source>
-        <translation type="unfinished">Pomembni zapiski, dnevni za </translation>
+        <translation>Pomembni zapiski, dnevni za </translation>
     </message>
     <message>
         <source>Search:</source>

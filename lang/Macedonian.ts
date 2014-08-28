@@ -1,5 +1,6 @@
-<!DOCTYPE TS><TS>
-<defaultcodec></defaultcodec>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="mk">
 <context>
     <name>SettingsDialog</name>
     <message>
@@ -172,7 +173,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Сетинзи</translation>
+        <translation>&amp;Сетинзи</translation>
     </message>
 </context>
 <context>
@@ -450,7 +451,7 @@
     </message>
     <message>
         <source>Important notes, journal for </source>
-        <translation type="unfinished">Важни белешки, дневник за </translation>
+        <translation>Важни белешки, дневник за </translation>
     </message>
     <message>
         <source>Search:</source>
