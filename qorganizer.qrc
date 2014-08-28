@@ -13,19 +13,6 @@
         <file>images/exit.png</file>
         <file>images/upload.png</file>
         <file>images/download.png</file>
-        <file>lang/Hungarian.qm</file>
-        <file>lang/Romanian.qm</file>
-        <file>lang/Slovenian.qm</file>
-        <file>lang/Portuguese.qm</file>
-        <file>lang/Russian.qm</file>
-        <file>lang/Estonian.qm</file>
-        <file>lang/Spanish.qm</file>
-        <file>lang/Albanian.qm</file>
-        <file>lang/Macedonian.qm</file>
-        <file>lang/Dutch.qm</file>
-        <file>lang/German.qm</file>
-        <file>lang/French.qm</file>
-        <file>lang/Polish.qm</file>
         <file>images/sound.wav</file>
         <file>images/clear.png</file>
         <file>images/databasesqlite.png</file>
